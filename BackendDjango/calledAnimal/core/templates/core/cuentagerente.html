@@ -1,0 +1,58 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+
+{% block content %}
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'core/'%}cuentagerente.css">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+    <div class="container">
+
+        <div id="datos">
+          
+            <h1 >MI CUENTA GERENCIAL</h1>
+        
+            <br>
+            <label for="tx_productovendido">Producto mas vendido:</label>
+            <input type="text" name="tx_pv" id="tx_pv" placeholder="Producto mas vendido">
+            <br><br>
+            <label for="tx_productomasven">Producto menos vendido:</label>
+            <input type="text" name="tx_pmv" id="tx_pmv" placeholder="Producto menos vendido">
+            <br><br>
+            <label for="tx_totalproducto">Total productos Ingresados:</label>
+            <input type="number" name="tx_tpi" id="tx_tpi" placeholder="Total productos Ingresados">
+            <br><br>
+            <label for="tx_totalproducto">Ingresar Nuevos Empleados: </label>
+            
+        
+            </div>
+        
+            <div class="imagen" >
+                  <img src="{% static 'core/'%}img/images.jpg" alt="">
+            </div>
+        
+          
+        
+            <div id="botones" >
+              <a href="ingresarpersonal.html"><button type="button" class="btn primary" id="newpersonal ">Ingresar nuevo personal</button></a>
+            
+        
+            <button type="button" class="btn primary" id="cerrarsesion">Cerrar sesion</button>
+            </div>
+
+    </div>
+   
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  </body>
+ {% endblock content %}

@@ -1,0 +1,26 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'core/' %}css/confirmacion.css">
+
+    <center><h2>suscripcion</h2></center>
+    <center><h2>felicidades, su suscripcion ha sido confrmada y 
+        ahora tendra
+        un 5% en el total de su compra.</h2></center>
+
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col">
+            <img id="g" src="{% static 'core/' %}gato.jpg" alt="">
+        </div>
+        </div>
+            <div class="col"></div>
+        
+    <div class="d-grid gap-2 col-2 mx-auto">
+        <button id="b" type="submit" class="btn btn-primary">Volver a mi cuenta</button>
+        </div>
+
+{% endblock content %}

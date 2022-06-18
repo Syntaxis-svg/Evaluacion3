@@ -1,0 +1,54 @@
+
+
+body{
+    background-color: bisque;
+    padding: 0;
+    margin: 0;
+  
+}
+.container{
+    margin: auto;
+    margin-top: 20px;
+    width: 900px;
+    height: 800px;
+}
+
+
+h1{
+    margin-top: 20px;
+}
+
+.producto1{
+   margin: 3.5em;
+   padding: 1em;
+   float: left;
+}
+
+
+.producto2{
+    margin: 1em;
+    padding: 1em;
+    float: left;
+}
+.producto3{
+    margin: 1em;
+    padding: 1em;
+    float: left;
+}
+
+.boton{
+    text-decoration: none;
+    border-radius: 3px;
+    padding: 20 px 15px;
+    display: inline-block;
+}
+
+.green{
+    color:white;
+    background-color:darkseagreen;
+}
+
+.primary{
+    color:white;
+    background-color:darkseagreen;
+}

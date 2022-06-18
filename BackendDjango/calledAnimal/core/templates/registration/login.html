@@ -1,0 +1,29 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block content %}
+    <div class="container">
+        {% load crispy_forms_tags %}
+        <h2>Autenticacion</h2>
+        <form action="" method="POST">
+            {% csrf_token %}
+            <table>
+                {{ form | crispy }}
+            </table>
+            <div class="float-right">
+            <input type="submit" value="Login" class="btn btn-success">
+            </div>
+        </form>
+    </div>
+{% endblock content %}
+
+
+
+
+
+<!--
+
+
+nacho
+-->

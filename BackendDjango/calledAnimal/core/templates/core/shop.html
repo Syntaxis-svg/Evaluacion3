@@ -1,0 +1,89 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block content %}
+<div class="cantenedor container-fluid">
+    <div class="container-fluid">
+      <header>
+        <h1>Catalogo De Productos</h1>
+        <h3>TODO LO QUE TU MASCOTA NECESITA</h3>
+      </header>
+    </div>
+  </div>
+  </div>
+  <div class="shop-items container-fluid">
+    <div class="row">
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src="{% static 'core/' %}img/shopItem.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">{{ p.descripcion}}</p>
+            <p id="itemOne">
+            </p>
+            <button type="submit" >Agregar al carro</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src="{% static 'core/' %}img/shopItem.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">{{ p.descripcion }}</p>
+            <p id="itemTwo">
+            </p>
+            <button type="submit" >Agregar al carro</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src="{% static 'core/' %}img/shopItem.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">{{ p.descripcion }}</p>
+            <p id="itemThree">
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="linea"></div>
+  <div class="row">
+    <div class="col"></div>
+    <div class="col">
+      <div class="converter-row-outer">
+        <div class="currency-converter">
+          <div class="center">
+            <h2>Revisa nuestros precios</h2>
+            <h4>En las diferentes monedas que tenemos para ti</h4>
+          </div>
+          <div class="field grid-50-50">
+            <div class="cajas">
+              <input type="number" class="form-input" id="number" placeholder="00000">
+            </div>
+            <div class="cajas">
+              <div class="select">
+                <select name="currency" class="currency" onchange="updatevalue()"></select>
+              </div>
+            </div>
+          </div>
+          <div class="field grid-50-50">
+            <div class="cajas">
+              <input type="text" class="form-input" id="output" placeholder="00000" disabled>
+            </div>
+            <div class="colmun col-right">
+              <div class="cajas">
+                <select name="currency" class="currency" onchange="updatevalue()"></select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col"></div>
+  </div>
+  <sript src="{% static 'core/' %}js/api.js"</script><!--no funciona-->
+
+
+{% endblock content %}

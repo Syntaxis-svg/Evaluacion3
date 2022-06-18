@@ -1,0 +1,82 @@
+body{
+    background-color: rgb(198, 203, 203);
+    margin-top: 10px;
+}
+.content{
+    margin: auto;
+    margin-top: 15px;
+    text-align: center;
+    background-color: #eee;
+    width: 340px;
+    height: 370px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.content h1{
+    font-family:'Times New Roman', Times, serif;
+    font-variant:small-caps;
+    color: rgb(99, 97, 174);
+}  
+.content h3{
+    font-size: 18px;
+    font-family: initial;
+    text-align: center;
+}
+.login-content input{
+    text-align: center;
+    margin: 6px;
+    margin-top: 9px;
+}
+.login-content button{
+    color: whitesmoke;
+    width: 185px;
+    height: 55pxx;
+    margin: 6px;
+    text-align: center;
+    background-color: rgb(42, 99, 242);
+    border: 0px;
+    border-radius: 4px;
+}
+.linea:last-child{
+    background-color: rgb(99, 97, 174);
+}
+.login-content a{
+    text-decoration: none;
+    font-size: 18px;
+    font-family: initial;
+}
+.footer{
+    background-color: #eee;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+    width: 340px;
+    height: 150px;
+}
+.text-footer a{
+    text-decoration: none;
+    font-size: 18px;
+    font-family: initial;
+    margin-left: 4px;
+}
+.text-footer{
+    display: flex;
+    margin: 10%;
+}
+.text-footer:hover{
+    text-decoration: underline;
+    transform: scale(1.5 1.5);
+}
+.content-reg{
+    margin: auto;
+    margin-top: 15px;
+    text-align: center;
+    background-color: #eee;
+    width: 340px;
+    height: 500px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.form-check{
+    text-align: start;
+}

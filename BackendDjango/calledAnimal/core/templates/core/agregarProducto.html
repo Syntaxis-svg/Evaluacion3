@@ -1,0 +1,58 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+    <head>
+        <link rel="stylesheet" href="{% static 'core/' %}css/agregrarproductos.css">
+    </head>
+    <!--Preguntar como unir un css que no este en la core/base.htmls-->>
+{% block content %}
+    <div>
+    <div class="header">
+    <h2>Agrega Producto</h2>
+    </div>
+
+    <div class="imagen">
+        <img src="{% static 'core/' %}img/bandana.jpg" alt=""></div>
+<!--
+    <form id="form" class="form">
+        <div class="form-control">
+            <label for="nombre">Nombre Producto</label>
+            <input type="text" placeholder="ingrese nombre producto" id="nombre" />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+        </div>
+        <div class="form-control">
+            <label for="descripcion">Descripcion</label>
+            <input type="text" placeholder="ingrese descripcion" id="descripcion" />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+            <label for="precio">Precio</label>
+            <input type="text" placeholder="ingrese precio" id="precio" />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+        </div>
+        <div class="form-control">
+            <label for="marca">Marca</label>
+            <input type="text" placeholder="Ingrese marca" id="marca"/>
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+        </div>
+        <button>Publicar</button>
+    </form>
+    </div>
+    </div>
+-->
+    <script src="{% static 'core/' %} agregarproducto.js"></script>
+    <form action="">
+        {{ form }}
+    </form>
+    <button type="submit" value="Guardar"/>
+
+{% endblock content %}

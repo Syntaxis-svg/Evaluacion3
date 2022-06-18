@@ -1,0 +1,39 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'core/' %}css/menususcripcion.css">
+<link rel="stylesheet" href="menususcripcion.html">
+
+    <center><h2>suscripcion</h2></center>
+    <center><h2>felicidades, su suscripcion ha sido confrmada y 
+        ahora tendra
+        un 5% en el total de su compra.</h2></center>
+
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col">
+            <img id="g" src="gato2.jpg" alt="">
+        </div>
+    </div>
+        <div class="col"></div>
+    <div class="prueba">
+    <div class="center">
+        <div class="row">
+        <div class="col">
+        <a class="btn btn-primary" href="" role="button">Volver</a>
+        </div>
+        <div class="col centrar ">
+            <a class="btn btn-primary" href="suscripcion.html" role="button">suscripcion</a>
+        </div>
+        <div class="col">
+            <a class="btn btn-primary" href="desuscripcion.html" role="button">Desuscripcion</a>
+        </div>
+        </div>
+    </div>
+
+    </div>
+
+{% endblock content %}

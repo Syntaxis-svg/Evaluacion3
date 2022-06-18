@@ -1,0 +1,25 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block content %}
+    <div class="container">
+    <h2>Listado Producto</h2>
+    <table class="table table-striped">
+        <tr>
+            <th>Nombre</th>
+            <th>Descripcion</th>
+            <th>Precio</th>
+            <th>Marca</th>
+        </tr>
+        {% for p in productos %}
+        <tr>
+            <td>{{ p.nombre }}</td>
+            <td>{{ p.descripcion }}</td>
+            <td>{{p.precio }}</td>
+            <td>{{p.marca }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    </div>
+{% endblock content %}

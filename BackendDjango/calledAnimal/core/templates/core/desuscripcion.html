@@ -1,0 +1,57 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'core/' %}css/estilos.css">
+
+<div class="container">
+{% load crispy_forms_tags %}
+<form action="" method="POST">
+    {% csrf_token %}
+        <table>
+            {{ form | crispy}}
+        </table>
+    <div class="body">
+        <div class="container">
+            <div class="header">
+                <h2>confirmar desuscripcion</h2>
+            </div>
+            <form id="form" class="form" action="">
+                <div class="form-control">
+                    <label for="password">contraseña</label>
+                    <input type="password" placeholder="Password" id="password"/>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="password2">confirme contraseña</label>
+                    <input type="password" placeholder="Password2" id="password2"/>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="d-grid gap-2">
+                    <a class="btn btn-primary" href="eliminacionsuscripcion.html" role="button">Desuscribirse</a>
+                    <a class="btn btn-primary" href="" role="button">Volver</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    </form>
+</div>
+
+
+    <div class="d-grid gap-2">
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+        <a class="btn btn-primary" href="suscripcion.html" role="button">suscripcion</a>
+        </li>
+    </ul>
+</div>
+
+    <script src="js/validarSuscrip.js"></script>
+
+{% endblock content %}

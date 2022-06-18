@@ -1,0 +1,83 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+
+{% block content %}
+  <head>
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'core/'%}productos_publicados.css">
+
+    <title>Hello, world!</title>
+  </head>
+
+ 
+  <body>
+  
+    
+    <div class="container">
+
+      <h1 align="center">Producto Publicados</h1>
+      <div class="buton-ingresar">
+        <a href="agregarProducto.html"><button type="button" class="btn primary" id="ingresarproducto">ingresar Producto</button></a>
+        
+      </div>
+
+     
+      <div class="producto1" id="producto1">
+        <img src="{% static 'core/'%}img/collar1.jpg" alt="" width="200" height="200">
+      <br>
+      <label for="tx_precio">precio:$10.000</label>
+      <br>
+      <label for="stock">stock:</label>
+      <br>
+      <a href="% url 'modificar-producto' p.id %"> Modificar</a>
+      <br>
+      <a href="% url 'eliminarProducto' p.id %"><button type="button" class="btn primary" id="eliminar">eliminar</button></a>
+      </div>
+
+      <br>
+      <div class="producto2" id="producto2">
+        <img src="{% static 'core/'%}img/collar2.jpg" alt="" width="200" height="200">
+      <br>
+      <label for="tx_precio" id="precio">precio:$5.000</label>
+      <br>
+      <label for="stock" id="stock">stock:</label>
+      <br>
+      <a href="% url 'modificarproducto' p.id %"> Modificar</a>
+      <br>
+      <a href="% url 'eliminarProducto' p.id %"><button type="button" class="btn primary" id="eliminar">eliminar</button></a>
+      </div>
+
+      <br>
+
+      <div class="producto3" id="producto3">
+        <img src="{% static 'core/'%}img/identificacion_mascota.jpg" alt="" width="200" height="200">
+      <br>
+      <label for="tx_precio">precio:$7.000</label>
+      <br>
+      <label for="stock">stock:</label>
+      <br>
+      <a href="% url 'modificarproducto' p.id %"> Modificar</a>
+      <br>
+      <a href="% url 'eliminarProducto' p.id %"><button type="button" class="btn primary" id="eliminar">eliminar</button></a>
+      </div>
+
+      {% for p in Producto %} 
+      <tr>
+        <td> {{p.producto1}} </td>
+        <td>{{p.producto2}}</td>
+        <td>{{p.producto3}}</td>
+      </tr>
+    
+    {% endfor %}
+
+      <div class="boton" >
+        <a href="Cuenta_Vendedor.html" ><button type="button" class="btn green" id="volver">Volver a mi cuenta vendedor</button></a>
+      </div> 
+      
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+  {% endblock content %}

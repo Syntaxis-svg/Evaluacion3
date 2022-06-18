@@ -1,0 +1,39 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<div id="datos">
+          
+    <h1 >MI CUENTA VENDEDOR</h1>
+
+    <br>
+    <label for="tx_productovendido">Producto mas vendido:</label>
+    <input type="text" name="tx_pv" id="tx_pv" placeholder="Producto mas vendido">
+    <br><br>
+    <label for="tx_productomasven">Producto menos vendido:</label>
+    <input type="text" name="tx_pmv" id="tx_pmv" placeholder="Producto menos vendido">
+    <br><br>
+    <label for="tx_totalproducto">Total productos Ingresados:</label>
+    <input type="number" name="tx_tpi" id="tx_tpi" placeholder="Total productos Ingresados">
+    <br><br>
+    <label for="tx_totalproducto">Ver productos publicados: </label>
+    <input type="text" name="tx_vpp" id="tx_vpp" placeholder="Ver productos publicados">
+
+    </div>
+
+    <div class="imagen" >
+          <img src="img/images.jpg" alt="">
+    </div>
+
+  
+
+    <div id="botones" >
+      <a href="../pages/productos_publicados.html"><button type="button" class="btn primary" id="productopublicado">Ver Productos Publicados</button></a>
+    
+
+    <button type="button" class="btn primary" id="cerrarsesion">Cerrar sesion</button>
+    </div>
+
+{% endblock content %}

@@ -1,0 +1,58 @@
+body{
+    background-color: rgb(210, 225, 225);
+}
+.header-img{
+    margin-top: 22px;
+}
+.img-header{
+    width: 100px;
+    height: 110px;
+    margin: auto;
+    margin-top: 12px;
+    margin-bottom: 14px;
+    margin-left: 12px;
+}
+.img-header-ajus{
+    width: 84px;
+    margin: auto;
+    margin-top: 12px;
+    margin-bottom: 14px;
+    margin-left: 14px;
+}
+.img-backg{
+    height:115px;
+    width:115px;
+    background:rgb(99, 97, 174);
+    -moz-border-radius:100px;
+    -webkit-border-radius:100px;
+    border-radius:75px;
+    box-shadow: 5px 4px 4px black ;
+}
+header{
+    background-color: rgb(112, 239, 239);
+    width: 550px;
+    border: 1px solid black;
+    text-align: center;
+    margin: auto;
+    margin-top: 35px;
+    box-shadow: 5px 4px 4px rgb(2, 0, 46);
+}
+header h1{
+    color: rgb(99, 97, 174);
+    font-family:'Times New Roman', Times, serif;
+    font-variant:small-caps;
+}
+header h2{
+    font-size: 18px;
+    font-family: initial;
+}
+.shop-items{
+    margin: auto;
+    margin-top: 15px;
+}
+.card{
+    box-shadow: 6px 4px 8px black;
+}
+.card-body{
+    background-color: rgb(112, 239, 239);
+}
